@@ -1,5 +1,3 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=Rob-LeDoux/MATLAB-Workplace-Challenge-E&file=SmartEcoGymApp_EPP_Team_2.mlx)
-
 # MATLAB-Workplace-Challenge-E.P.P-Team-2---Data-Analytics-Apps-for-a-Smart-Eco-Gym
 Project to complete in the 2026 MATLAB Workplace Challenge as a part of the Engineering Pathway Program. Team of four tasked with creating a data analytics app/dashboard from data collected in smart eco gyms utilizing MATLAB / Simulink. 
 
