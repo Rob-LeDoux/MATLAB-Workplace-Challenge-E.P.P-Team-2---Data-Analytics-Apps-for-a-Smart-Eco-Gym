@@ -46,7 +46,7 @@ Final Data Set (Required to run application): final_generated_wearable_sensor_da
 5. Finally, click "Run" on the designer tab.
 
 ## How to Use   
-![image3](https://github.com/user-attachments/assets/019efb42-b8bc-4e0c-9b28-8c9a2a44b981)  
+![image3](https://github.com/user-attachments/assets/c1d07b88-8964-4704-b965-00686b98d4dd)  
 Upon opening and running the application, users are led to our homescreen as seen above.  
 
 1. Firstly, all users are required to enter / type their User ID towards the left side of the dashboard to gain access to that user's specific data. **Remember, for the scope of this app, users can test different user IDs from P01, P02, P03, . . .  P23 (data is simulated)**
@@ -56,7 +56,7 @@ Upon opening and running the application, users are led to our homescreen as see
 2. After a valid ID has been entered, the general stats page will be shown. The user Info box will be filled with that user's information and metrics, 3 general stat graphs will be shown, and the suggestions and insights boxes will populate.   
 
 3. Users can then use the "Click Me" buttons placed next to their corresponding activity in the gym graphic as seen to the right. This will modify the Calories Burned vs Average graph and Heart Rate graphs so that it only shows data on that specific activity. "Return to General Stats" can be used to show the data on all the user's sessions and activities.  
-   ![image5](https://github.com/user-attachments/assets/cbb2ab1f-9289-42dd-bc83-bb8387fc7b24)
+   ![image5](https://github.com/user-attachments/assets/495495c7-6e68-42e0-9b64-36a811c1d094)
 
 ## Explanation of How Insights/Suggestions/Graphs were calculated, their meaning, and what to Interpret 
 
@@ -85,19 +85,15 @@ Beginning this project, team members met together to create a timeline for miles
 
 ## Challenges Encountered
 
-Challenge #1: While creating the app, most challenges occurred when processing and utilizing the data after it was loaded. The raw data loaded was fully in cell arrays nested in a cell array format which created some issues when we would try to iterate through the data (i.e. Error: not allowing dot indexing for cell arrays).  
-
+Challenge #1: While creating the app, most challenges occurred when processing and utilizing the data after it was loaded. The raw data loaded was fully in cell arrays nested in a cell array format which created some issues when we would try to iterate through the data (i.e. Error: not allowing dot indexing for cell arrays).   
 Steps to Solve #1: We first attempted to use the cell2struct / cell2table functions from MATLAB, but due to the weird format raw data was loaded as (a 1xSize cell array with a separate individual cell array inside each index), these functions could not correctly transform the data into an easier-to-use format. Instead, we had to use a comma-separated list expansion so that the outer cell array is expanded into an array of individual structs that maintained the correct field names such as person_id, session_id, etc. Finally, we were then able to use struct2table so that we could join the 3 tables on each other and access values without needing a loop. 
 
 Challenge #2: For the Heart Rate Graph, we once again were challenged with the data. After data had been transferred to table format, the heart rate column was still holding data as a single cell array this time.   
-
 Steps to Solve #2: Since we wanted to get it into graph ready form, we transformed the single cell arrays using cell2mat. This way, the heart rate data was in numbered vector form and could be fed into the plot function in MATLAB. 
 
 Challenge #3: We wanted to manage the resizing of the app using the MATLAB App Designer 'Grid Layout' feature, but the amount of components used, specifically the images, left the layout even more messy.  
-
 Steps to Solve #3: Instead of trying to wrestle with the 'Grid Layout' feature, we decided to lock the sizing of the screen at 1 measurement. Given more time, we would have learned the ins and outs of using Grid Layout to maintain the apps layout while allowing the user to resize their screen. 
 
 ## Results and Analysis
 
 In conclusion, the application created accepts inputted data and organizes information to be understood by users by providing unique advice and visuals for the individuals. We have worked throughout these past weeks to sort data and create a legitimate application using wearable fitness data, assisting smart gym users to find the most efficient workout for them.
-
