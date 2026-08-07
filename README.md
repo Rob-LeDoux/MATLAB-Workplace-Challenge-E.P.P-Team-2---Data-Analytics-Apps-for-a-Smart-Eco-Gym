@@ -69,7 +69,8 @@ Upon opening and running the application, users are led to our homescreen as see
       ![image6](https://github.com/user-attachments/assets/a402149e-4517-4519-a619-ff620db26547)  
    2. Heart Rate vs Time: Heart rate throughout each session workout. Users must select which sessions they would like to view using the list box on the left in order not to overcrowd the graph. 'Shift: select' can be used to choose multiple sessions to compare.   
       ![image7](https://github.com/user-attachments/assets/4feac21c-c444-4dff-b724-bce98521ac28)  
-   3. Workout Efficiency: displays the user's workout efficiency in kcal burned / hr for each activity. This graph will not change with the activity selected. 
+   3. Workout Efficiency: displays the user's workout efficiency in kcal burned / hr for each activity. This graph will not change with the activity selected.
+      
       <img src="https://github.com/user-attachments/assets/7fdd7bb8-a73c-4692-870b-ab129d553137" width="420">
 ## Overall Approach
 
