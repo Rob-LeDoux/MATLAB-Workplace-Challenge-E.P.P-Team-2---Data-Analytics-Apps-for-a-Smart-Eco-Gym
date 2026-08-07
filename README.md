@@ -70,7 +70,7 @@ Upon opening and running the application, users are led to our homescreen as see
    2. Heart Rate vs Time: Heart rate throughout each session workout. Users must select which sessions they would like to view using the list box on the left in order not to overcrowd the graph. 'Shift: select' can be used to choose multiple sessions to compare.   
       ![image7](https://github.com/user-attachments/assets/4feac21c-c444-4dff-b724-bce98521ac28)  
    3. Workout Efficiency: displays the user's workout efficiency in kcal burned / hr for each activity. This graph will not change with the activity selected. 
-
+      ![image8](https://github.com/user-attachments/assets/7fdd7bb8-a73c-4692-870b-ab129d553137)  
 ## Overall Approach
 
 Beginning this project, team members met together to create a timeline for milestones, specific roles, and better understand each other's preferred work style. We met twice per week, gathering ideas and updating on our individual progress. We were each assigned roles of Project Manager, Documentation & Visualization Lead, Modeling Lead, and Analysis/Validation & Quality Assurance, but these roles morphed as we progressed. In practice, both the Visualization Lead and Analysis/Validation & Quality Assurance roles were split amongst two people evenly, allowing both individuals to essentially have the same roles. On the technical side, we started with data cleanup and design brainstorming. Once we had a general idea of the route we were interested in pursuing, we began coding our application and the different features. Chronologically, we worked on the User Anonymous ID prompts, specific data and personal analytics per user, visualizations, and finally ended with our suggestions area to advise users on their future workouts.
