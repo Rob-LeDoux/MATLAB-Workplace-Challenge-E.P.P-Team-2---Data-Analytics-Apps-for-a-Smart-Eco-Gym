@@ -86,12 +86,15 @@ Beginning this project, team members met together to create a timeline for miles
 ## Challenges Encountered
 
 Challenge #1: While creating the app, most challenges occurred when processing and utilizing the data after it was loaded. The raw data loaded was fully in cell arrays nested in a cell array format which created some issues when we would try to iterate through the data (i.e. Error: not allowing dot indexing for cell arrays).   
+
 Steps to Solve #1: We first attempted to use the cell2struct / cell2table functions from MATLAB, but due to the weird format raw data was loaded as (a 1xSize cell array with a separate individual cell array inside each index), these functions could not correctly transform the data into an easier-to-use format. Instead, we had to use a comma-separated list expansion so that the outer cell array is expanded into an array of individual structs that maintained the correct field names such as person_id, session_id, etc. Finally, we were then able to use struct2table so that we could join the 3 tables on each other and access values without needing a loop. 
 
 Challenge #2: For the Heart Rate Graph, we once again were challenged with the data. After data had been transferred to table format, the heart rate column was still holding data as a single cell array this time.   
+
 Steps to Solve #2: Since we wanted to get it into graph ready form, we transformed the single cell arrays using cell2mat. This way, the heart rate data was in numbered vector form and could be fed into the plot function in MATLAB. 
 
 Challenge #3: We wanted to manage the resizing of the app using the MATLAB App Designer 'Grid Layout' feature, but the amount of components used, specifically the images, left the layout even more messy.  
+
 Steps to Solve #3: Instead of trying to wrestle with the 'Grid Layout' feature, we decided to lock the sizing of the screen at 1 measurement. Given more time, we would have learned the ins and outs of using Grid Layout to maintain the apps layout while allowing the user to resize their screen. 
 
 ## Results and Analysis
