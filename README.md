@@ -27,7 +27,7 @@ Gym members are the intended users for this application who want to better under
 
 ## Data Files
 
-Final Data Set (Required to run application): final_generated_wearable_sensor_data.mat   
+Final Data Set (Required to run application but too large to push directly into GitHub Repo): final_generated_wearable_sensor_data.mat   
 [Download link](https://drive.google.com/file/d/1dDO3rxsX76UfsLDaIsWcs0vN1jsQ4auz/view?usp=sharing)
 
 ** Using the wearable_sensor_data.mat file from the MATLAB challenge guide, we prompted AI to create more simulated workout sessions so we could increase the amount of data we could work with to display and give more insights **
